@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript da RocketSeat</title>
+    </head>
+    <body>
+        <script>
+            function putTogether (usuarios) {
+                for (usuario of usuarios) {
+                    console.log("O ",usuario.nome, "possui as habilidades: ", usuario.habilidades.join(", "));
+                }
+            }
+            var usuarios = [
+                { nome: "Diego", habilidades: ["JavaScript", "ReactJS", "Redux"]},
+                { nome: "Gabriel", habilidades: ["VueJS", "Ruby on Rails", "Elixir"]}
+            ]
+            putTogether(usuarios);
+        </script>
+    </body>
+</html>
